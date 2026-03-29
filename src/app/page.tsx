@@ -12,6 +12,7 @@ export default function Home() {
 <a className="text-emerald-400 font-bold border-b-2 border-emerald-400 pb-1 transition-all duration-300" href="#experience">Experience</a>
 <a className="text-slate-400 hover:text-blue-300 transition-colors transition-all duration-300" href="#projects">Projects</a>
 <a className="text-slate-400 hover:text-blue-300 transition-colors transition-all duration-300" href="#skills">Skills</a>
+<a className="text-slate-400 hover:text-blue-300 transition-colors transition-all duration-300" href="#opensource">Open Source</a>
 <a className="text-slate-400 hover:text-blue-300 transition-colors transition-all duration-300" href="#contact">Contact</a>
 </div>
 <a href="/my-portfolio/resume.pdf" target="_blank" rel="noopener noreferrer" className="bg-primary-container text-on-primary-container px-6 py-2 font-headline text-xs tracking-widest uppercase rounded-lg hover:bg-primary transition-all duration-300 scale-95 active:scale-90 inline-block text-center cursor-pointer">
@@ -218,14 +219,87 @@ export default function Home() {
 </section>
 </main>
 
+<section className="py-24 px-6 bg-surface-container-low" id="opensource">
+<div className="max-w-7xl mx-auto">
+<div className="mb-16">
+<h2 className="font-headline text-4xl md:text-5xl font-bold mb-4">Open Source</h2>
+<div className="h-1 w-24 bg-secondary"></div>
+<p className="font-body text-on-surface-variant mt-6 max-w-xl">Contributing to the tools I use and care about. Bug fixes, new features, and collaboration on projects in finance, developer tooling, and AI/ML.</p>
+</div>
+<div className="grid md:grid-cols-2 gap-8">
+<a href="https://github.com/marimo-team/marimo/pull/8918" target="_blank" rel="noopener noreferrer" className="glass-panel group p-8 rounded-2xl border border-outline-variant/10 hover:border-secondary/40 transition-all duration-500 hover:translate-y-[-4px] block">
+<div className="flex items-start justify-between mb-4">
+<div className="flex items-center gap-3">
+<div className="p-2 bg-secondary/10 rounded-lg text-secondary">
+<span className="material-symbols-outlined text-2xl">merge</span>
+</div>
+<div>
+<p className="font-label text-xs text-outline tracking-widest uppercase">marimo-team/marimo</p>
+<span className="inline-flex items-center gap-1 mt-1 px-2 py-0.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-[10px] font-label font-bold tracking-widest uppercase">Open PR #8918</span>
+</div>
+</div>
+<span className="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">open_in_new</span>
+</div>
+<h3 className="font-headline text-lg font-bold mb-2">Fix mo.ui.form submit inconsistencies</h3>
+<p className="font-body text-sm text-on-surface-variant leading-relaxed mb-4">Fixed 3 bugs: Ctrl+Enter now routes through form validation, Shift+Enter no longer bypasses the form buffer, and wrapped element on_change no longer double-fires on submission.</p>
+<div className="flex flex-wrap gap-2">
+<span className="px-3 py-1 rounded-full bg-surface-container-lowest text-[10px] font-label font-bold tracking-widest uppercase border border-outline-variant/20">Python</span>
+<span className="px-3 py-1 rounded-full bg-surface-container-lowest text-[10px] font-label font-bold tracking-widest uppercase border border-outline-variant/20">TypeScript</span>
+<span className="px-3 py-1 rounded-full bg-surface-container-lowest text-[10px] font-label font-bold tracking-widest uppercase border border-outline-variant/20">Bug Fix</span>
+</div>
+</a>
+<div className="glass-panel p-8 rounded-2xl border border-outline-variant/10 border-dashed flex flex-col items-center justify-center text-center gap-4 min-h-[200px]">
+<span className="material-symbols-outlined text-4xl text-outline/50">add_circle</span>
+<div>
+<p className="font-headline font-bold text-on-surface-variant">More coming soon</p>
+<p className="font-body text-sm text-outline mt-1">Actively contributing to backtesting.py, cinar/indicator, and other Python/Go projects</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section className="py-24 px-6" id="contact">
+<div className="max-w-7xl mx-auto">
+<div className="mb-16 text-center">
+<h2 className="font-headline text-4xl md:text-5xl font-bold mb-4">Get In Touch</h2>
+<p className="font-body text-on-surface-variant max-w-xl mx-auto">Open to OSS collaboration, consulting in fintech infrastructure, or just a good conversation about systems design.</p>
+</div>
+<div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+<a href="https://www.linkedin.com/in/pranav-tomar-a31476172/" target="_blank" rel="noopener noreferrer" className="glass-panel group flex items-center gap-4 px-8 py-5 rounded-2xl border border-outline-variant/10 hover:border-primary/40 transition-all duration-300 hover:translate-y-[-4px] min-w-[220px]">
+<span className="material-symbols-outlined text-2xl text-primary">person</span>
+<div>
+<p className="font-label text-xs text-outline tracking-widest uppercase">Connect</p>
+<p className="font-headline font-bold">LinkedIn</p>
+</div>
+<span className="material-symbols-outlined text-outline group-hover:text-primary transition-colors ml-auto">open_in_new</span>
+</a>
+<a href="https://github.com/Mystery01092000" target="_blank" rel="noopener noreferrer" className="glass-panel group flex items-center gap-4 px-8 py-5 rounded-2xl border border-outline-variant/10 hover:border-secondary/40 transition-all duration-300 hover:translate-y-[-4px] min-w-[220px]">
+<span className="material-symbols-outlined text-2xl text-secondary">code</span>
+<div>
+<p className="font-label text-xs text-outline tracking-widest uppercase">Collaborate</p>
+<p className="font-headline font-bold">GitHub</p>
+</div>
+<span className="material-symbols-outlined text-outline group-hover:text-secondary transition-colors ml-auto">open_in_new</span>
+</a>
+<a href="https://www.linkedin.com/in/pranav-tomar-a31476172/" target="_blank" rel="noopener noreferrer" className="glass-panel group flex items-center gap-4 px-8 py-5 rounded-2xl border border-outline-variant/10 hover:border-tertiary/40 transition-all duration-300 hover:translate-y-[-4px] min-w-[220px]">
+<span className="material-symbols-outlined text-2xl text-tertiary">mail</span>
+<div>
+<p className="font-label text-xs text-outline tracking-widest uppercase">Message</p>
+<p className="font-headline font-bold">pranavtom1223@gmail.com</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+
 <footer className="bg-slate-950 w-full py-12 border-t border-slate-900 flex flex-col items-center justify-center space-y-4 px-4">
 <div className="flex space-x-8 mb-4">
-<a className="text-slate-500 hover:text-blue-400 transition-colors font-inter text-xs tracking-tight opacity-70 transition-all opacity-100 hover:opacity-80" href="#">LinkedIn</a>
-<a className="text-slate-500 hover:text-blue-400 transition-colors font-inter text-xs tracking-tight opacity-70 transition-all opacity-100 hover:opacity-80" href="#">GitHub</a>
-<a className="text-slate-500 hover:text-blue-400 transition-colors font-inter text-xs tracking-tight opacity-70 transition-all opacity-100 hover:opacity-80" href="#">Twitter</a>
+<a className="text-slate-500 hover:text-blue-400 transition-colors font-inter text-xs tracking-tight opacity-70 hover:opacity-100" href="https://www.linkedin.com/in/pranav-tomar-a31476172/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a className="text-slate-500 hover:text-blue-400 transition-colors font-inter text-xs tracking-tight opacity-70 hover:opacity-100" href="https://github.com/Mystery01092000" target="_blank" rel="noopener noreferrer">GitHub</a>
 </div>
 <p className="font-inter text-xs tracking-tight opacity-70 text-slate-500">
-            © 2024 Pranav Tomar. Built for the Financial Frontier.
+            © 2026 Pranav Tomar. Built for the Financial Frontier.
         </p>
 </footer>
 
