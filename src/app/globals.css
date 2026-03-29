@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0DF9FF;
+  --color-on-primary: #050B14;
+  --color-primary-container: #00808B;
+  --color-on-primary-container: #E0FFFF;
+  --color-secondary: #00FF66;
+  --color-on-secondary: #050B14;
+  --color-secondary-container: #008033;
+  --color-on-secondary-container: #E0FFE5;
+  --color-tertiary: #B026FF;
+  --color-on-tertiary: #050B14;
+  --color-surface: #050B14;
+  --color-on-surface: #dae2fd;
+  --color-on-surface-variant: #8d90a0;
+  --color-surface-container-lowest: #02050A;
+  --color-surface-container-low: #080D17;
+  --color-surface-container: #0F1A2D;
+  --color-surface-container-high: #16253F;
+  --color-surface-container-highest: #1D3153;
+  --color-outline: #434655;
+  --color-outline-variant: #1D3153;
+
+  --font-headline: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-manrope), sans-serif;
+  --font-label: var(--font-inter), sans-serif;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+.glass-panel {
+  background: rgba(15, 26, 45, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #0DF9FF, #00FF66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ambient-glow {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(13, 249, 255, 0.08) 0%, rgba(5, 11, 20, 0) 70%);
+  z-index: -1;
+  pointer-events: none;
+}
